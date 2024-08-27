@@ -36,7 +36,8 @@ export GOOGLE_CREDENTIALS="$(cat path/to/centering-1234567890.json)"
 Enable Google Compute Engine API
 
 APIs & Services > API Library> Compute Engine API > Click Enable
-Note: To enable Compute Engine API service, it is necessary to configure a billing account for the project.
+
+> Note: To enable Compute Engine API service, it is necessary to configure a billing account for the project.
 
 
 
