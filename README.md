@@ -29,7 +29,7 @@ Configure GOOGLE_CREDENTIALS environment variable.
 
 To set this environment variable on Linux, use the below command. This will save the contents of the json file to the variable GOOGLE_CREDENTIALS
 ```sh
-export GOOGLE_CREDENTIALS="$(cat path/to/centering-1234567890.json)"
+export GOOGLE_CREDENTIALS="$(cat path/to/key.json)"
 ```
 ### Step 4 
 
