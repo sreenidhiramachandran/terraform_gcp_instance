@@ -1,5 +1,6 @@
 # terraform_gcp_instance
 
+Creating a compute engine on GCP using terraform. 
 
 ### Step 1 
 
@@ -14,11 +15,11 @@ a. Give a name and description.
 b. Grant this service account access to project: Grant this service account access to the project so that it has permission to complete specific actions on the resources in your project. Here, we can 
    add roles for admin or editor or read access as required. Optionally, we can also add IAM condition, to grant access to principals only when the specified conditions are met.
    
-c. Grant users access to this service account (optional): Grant users the permissions to deploy jobs and VMs with this service account
+  Here, we are adding compute admin role(Full control of all Compute Engine resources.)
 
-d. After the service account is created, find it in the list, click on it, and then navigate to the Keys tab
+c. After the service account is created, find it in the list, click on it, and then navigate to the Keys tab
 
-e. Click on Add Key and select Create New Key.
+d. Click on Add Key and select Create New Key.
    Choose the JSON key type. Click Create. A JSON file containing your credentials will be downloaded to your computer. You can see a pop-up message 'Private key saved to your computer'
 
 > NOTE: Make sure to store the JSON file securely. It contains sensitive information that grants access to your Google Cloud resources.
@@ -39,5 +40,30 @@ APIs & Services > API Library> Compute Engine API > Click Enable
 
 > Note: To enable Compute Engine API service, it is necessary to configure a billing account for the project.
 
+### Step 5
+
+Install terraform and run the below commands
+
+```sh
+terraform init
+```
+
+```sh
+terraform validate
+```
+
+```sh
+terraform plan
+```
+
+```sh
+terraform apply
+```
+
+## Output
+
+After applying the terraform code successfully, we can see that the instance has been created under our project.
+
+![image](https://github.com/user-attachments/assets/148df880-bf27-4706-9bb2-226b8f2b610c)
 
 
